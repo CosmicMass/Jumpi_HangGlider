@@ -1,0 +1,137 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Water_Mobile_Pala
+  m_Shader: {fileID: 4800000, guid: f04c9486b297dd848909db26983c9ddb, type: 3}
+  m_ValidKeywords:
+  - _ENVIRONMENTREFLECTIONS_OFF
+  - _FOAM
+  - _NORMALMAP
+  - _SHARP_INERSECTION
+  m_InvalidKeywords:
+  - ADVANCED_LIGHTING
+  - _CROSSPAN_INTERSECTION
+  - _DEPTH_TEX
+  - _SIMPLE_LIGHTING
+  - _WORLDSPACEUV_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: 88908a7c7a1f0ed418d1048378c17411, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMapLarge:
+        m_Texture: {fileID: 2800000, guid: 88908a7c7a1f0ed418d1048378c17411, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CausticsTex:
+        m_Texture: {fileID: 2800000, guid: 744ff0bbd92e5bd41a70b5102327485b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FoamTex:
+        m_Texture: {fileID: 2800000, guid: 6a4aa5aa1ed7b9e4e9204a95f56f4d29, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _IntersectionNoise:
+        m_Texture: {fileID: 2800000, guid: b8850342fb8b1e846ac3807e35ec1685, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _PlanarReflectionLeft:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _CausticsBrightness: 3.85
+    - _CausticsOn: 0
+    - _CausticsSpeed: 0.2
+    - _CausticsTiling: 0.4
+    - _Cull: 2
+    - _Depth: 0.09
+    - _DepthExp: 0
+    - _DisableDepthTexture: 0
+    - _EdgeFade: 0
+    - _FoamSize: 0.905
+    - _FoamSpeed: 0.020000014
+    - _FoamTiling: 0.010000015
+    - _FoamWaveMask: 0
+    - _FoamWaveMaskExp: 1
+    - _HorizonDistance: 32
+    - _IntersectionClipping: 0.5
+    - _IntersectionFalloff: 1
+    - _IntersectionLength: 5
+    - _IntersectionRippleDist: 32
+    - _IntersectionRippleStrength: 1
+    - _IntersectionSource: 0
+    - _IntersectionSpeed: 0.2
+    - _IntersectionStyle: 1
+    - _IntersectionTiling: 1.0000001
+    - _NormalMapOn: 1
+    - _NormalSpeed: 0.009999961
+    - _NormalStrength: 0.434
+    - _NormalTiling: 0.010000298
+    - _PlanarReflectionsEnabled: 0
+    - _PlanarReflectionsParams: 0
+    - _ReflectionBlur: 0
+    - _ReflectionDistortion: 0.05
+    - _ReflectionFresnel: 5
+    - _ReflectionStrength: 0.349
+    - _RefractionOn: 0
+    - _RefractionStrength: 1
+    - _ShadingMode: 0
+    - _ShadowStrength: 0.804
+    - _SparkleIntensity: 0
+    - _SparkleSize: 0
+    - _SunReflectionDistortion: 0.335
+    - _SunReflectionSize: 0.461
+    - _SunReflectionStrength: 30
+    - _WaveCount: 1
+    - _WaveDistance: 0.961
+    - _WaveHeight: 1
+    - _WaveNormalStr: 5.83
+    - _WaveSpeed: 1
+    - _WaveSteepness: 0.21
+    - _WaveTint: 0
+    - _WavesOn: 0
+    - _WorldSpaceUV: 1
+    - _ZWrite: 0
+    m_Colors:
+    - _AnimationParams: {r: 1, g: 1, b: 1, a: 0}
+    - _BaseColor: {r: 0, g: 0.40523347, b: 0.67058825, a: 1}
+    - _DistanceNormalParams: {r: 500, g: 500, b: 1, a: 0}
+    - _FoamColor: {r: 0.9402515, g: 0.9566862, b: 1, a: 1}
+    - _HorizonColor: {r: 0.84, g: 1, b: 1, a: 0.15}
+    - _IntersectionColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ShallowColor: {r: 0.08627451, g: 0.43137255, b: 0.7490196, a: 0.02}
+    - _SlopeParams: {r: 0.5, g: 4, b: 0, a: 0}
+    - _TranslucencyParams: {r: 0.505, g: 5.39, b: 0, a: 0}
+    - _VertexColorMask: {r: 0, g: 0, b: 1, a: 0}
+    - _WaveDirection: {r: 0.5, g: -0.5, b: 0.5, a: -0.5}
+    - _WaveFadeDistance: {r: 459.8805, g: 499.99997, b: 0, a: 0}
+  m_BuildTextureStacks: []
+--- !u!114 &6498140463000427223
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
