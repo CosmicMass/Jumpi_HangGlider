@@ -7,13 +7,12 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Water_Mobile_Pala
+  m_Name: testt
   m_Shader: {fileID: 4800000, guid: f04c9486b297dd848909db26983c9ddb, type: 3}
   m_ValidKeywords:
   - _ENVIRONMENTREFLECTIONS_OFF
   - _FOAM
   - _NORMALMAP
-  - _RIVER
   - _SHARP_INERSECTION
   m_InvalidKeywords:
   - ADVANCED_LIGHTING
@@ -107,7 +106,7 @@ Material:
     - _WaveSteepness: 0.21
     - _WaveTint: 0
     - _WavesOn: 0
-    - _WorldSpaceUV: 0
+    - _WorldSpaceUV: 1
     - _ZWrite: 0
     m_Colors:
     - _AnimationParams: {r: 1, g: 1, b: 25, a: 0}

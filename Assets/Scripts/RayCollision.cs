@@ -48,11 +48,6 @@ public class RayCollision : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("memo");
-    }
-
     private void RayIslandCollision()
     {
         RaycastHit hit;

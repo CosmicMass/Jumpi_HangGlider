@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
-using UnityEngine.AdaptivePerformance.VisualScripting;
-using System.Globalization;
 
 public class CollisionHandler : MonoBehaviour
 {
@@ -22,9 +17,6 @@ public class CollisionHandler : MonoBehaviour
 
     AudioSource audioSource;
 
-    bool isTouchedWater = true;
-    bool isTouchedRoof = true;
-
     public GameObject Water;
     public GameObject CeilingCollider;
 
@@ -34,34 +26,42 @@ public class CollisionHandler : MonoBehaviour
         if(Instance == null)
             Instance = this;
     }
+
     void Start()
     {
         //audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody>();
     }
+
     public void WaterCollision()
     {
-        rb.transform.DOLocalMoveY(transform.localPosition.y + 50f, 40f * Time.fixedDeltaTime);
+        rb.transform.DOLocalMoveY(transform.localPosition.y + 25f, 50f * Time.fixedDeltaTime);
+        rb.transform.DOLocalRotate(new Vector3(-10, 0, 0), 50f * Time.fixedDeltaTime);
     }
+
     public void RoofCollision()
     {
-        rb.transform.DOLocalMoveY(transform.localPosition.y - 50f, 40f * Time.fixedDeltaTime);
+        rb.transform.DOLocalMoveY(transform.localPosition.y - 20f, 50f * Time.fixedDeltaTime);
+        rb.transform.DOLocalRotate(new Vector3(10,0,0), 50f * Time.fixedDeltaTime);
     }
+
+    public void LeftCollision()
+    {
+        rb.transform.DOLocalMoveX(transform.localPosition.x + 5f, 50f * Time.fixedDeltaTime);
+    }
+
+    public void RightCollision()
+    {
+        rb.transform.DOLocalMoveX(transform.localPosition.x - 5f, 50f * Time.fixedDeltaTime);
+    }
+
     public void StartCrashSequence()
     {
-        //isTransitioining = true;
-        //audioSource.Stop();
-        //audioSource.PlayOneShot(crash);
-        //crashParticles.Play();
         GetComponent<DeltaController>().enabled = false;
         Invoke("ReloadLevel", levelLoadDelay);
     }
     void StartSuccessSequence()
     {
-        //isTransitioining = true;
-        //audioSource.Stop();
-        //audioSource.PlayOneShot(success);
-        //successParticles.Play();
         Invoke("LoadNextLevel", levelLoadDelay);
     }
     void LoadNextLevel()
