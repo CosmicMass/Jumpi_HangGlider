@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour
 
     private void HandlePlaneMovement()
     {
-        //rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, forwardSpeed * forwardSpeedMultiplier * Time.deltaTime);
+        rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, forwardSpeed * forwardSpeedMultiplier * Time.deltaTime);
 
         float xVelocity = horizontalInput * speedMultiplier * horizontalSpeed * Time.deltaTime;
         float yVelocity = -verticalInput * speedMultiplier * verticalSpeed * Time.deltaTime;

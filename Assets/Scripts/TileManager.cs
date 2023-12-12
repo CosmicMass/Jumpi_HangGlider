@@ -4,18 +4,44 @@ using UnityEngine;
 
 public class TileManager : MonoBehaviour
 {
-    public List<GameObject> path;
+    public GameObject[] tilePrefabs;
+    public float zSpawn = 0;
+    public float tileLength = 30;
+    public int numberOfTiles = 5;
+    public List<GameObject> activeTiles = new List<GameObject>();
+    public Transform playerTransform;
+    //public GameObject container;
 
-    private void Update()
+    void Start()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        for (int i = 0; i < numberOfTiles; i++)
         {
-            Debug.Log("Calisti...");       
+            if (i == 0)
+                SpawnTile(0);
+            else
+                SpawnTile(Random.Range(0, tilePrefabs.Length));
+
         }
     }
 
-    public void Mehmet()
+    void Update()
     {
+        if (playerTransform.position.z - 50 > zSpawn - (numberOfTiles * tileLength))
+        {
+            SpawnTile(Random.Range(0, tilePrefabs.Length));
+            DeleteTile();
+        }
+    }
+    public void SpawnTile(int tileIndex)
+    {
+        GameObject go = Instantiate(tilePrefabs[tileIndex], transform.forward * zSpawn, transform.rotation);
+        activeTiles.Add(go);
+        zSpawn += tileLength;
 
+    }
+    private void DeleteTile()
+    {
+        Destroy(activeTiles[0]);
+        activeTiles.RemoveAt(0);
     }
 }

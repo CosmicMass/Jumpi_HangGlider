@@ -71,19 +71,19 @@ Material:
     - _FoamWaveMask: 0
     - _FoamWaveMaskExp: 1
     - _HorizonDistance: 32
-    - _IntersectionClipping: 0.5
-    - _IntersectionFalloff: 1
+    - _IntersectionClipping: 1
+    - _IntersectionFalloff: 0.573
     - _IntersectionLength: 5
-    - _IntersectionRippleDist: 32
+    - _IntersectionRippleDist: 0
     - _IntersectionRippleStrength: 1
     - _IntersectionSource: 0
-    - _IntersectionSpeed: 0.2
+    - _IntersectionSpeed: 0
     - _IntersectionStyle: 1
     - _IntersectionTiling: 1.0000001
     - _NormalMapOn: 1
     - _NormalSpeed: 0.015
-    - _NormalStrength: 0.5
-    - _NormalTiling: 0.010000298
+    - _NormalStrength: 0.462
+    - _NormalTiling: 0.002
     - _PlanarReflectionsEnabled: 0
     - _PlanarReflectionsParams: 0
     - _ReflectionBlur: 0
@@ -107,17 +107,17 @@ Material:
     - _WaveSteepness: 0.21
     - _WaveTint: 0
     - _WavesOn: 0
-    - _WorldSpaceUV: 0
+    - _WorldSpaceUV: 1
     - _ZWrite: 0
     m_Colors:
-    - _AnimationParams: {r: 1, g: 1, b: 25, a: 0}
+    - _AnimationParams: {r: -1, g: -1, b: 30, a: 0}
     - _BaseColor: {r: 0, g: 0.3047619, b: 1, a: 1}
     - _DistanceNormalParams: {r: 500, g: 500, b: 0.445, a: 0}
     - _FoamColor: {r: 0.9402515, g: 0.9566862, b: 1, a: 1}
     - _HorizonColor: {r: 0.27889434, g: 0.89626956, b: 0.90466136, a: 1}
     - _IntersectionColor: {r: 1, g: 1, b: 1, a: 1}
     - _ShallowColor: {r: 0.054901935, g: 0.47331733, b: 0.7490196, a: 1}
-    - _SlopeParams: {r: 0.5, g: 4, b: 0, a: 0}
+    - _SlopeParams: {r: 0, g: 4, b: 0, a: 0}
     - _TranslucencyParams: {r: 0.278, g: 4.41, b: 0, a: 0}
     - _VertexColorMask: {r: 0, g: 0, b: 1, a: 0}
     - _WaveDirection: {r: 0.5, g: -0.5, b: 0.5, a: -0.5}
