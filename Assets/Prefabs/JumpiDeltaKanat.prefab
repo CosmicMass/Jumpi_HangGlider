@@ -479,13 +479,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
-  forwardSpeed: 25
+  forwardSpeed: 50
   horizontalSpeed: 2
   verticalSpeed: 3
   maxHorizontalRotation: 0.4
   maxVerticalRotation: 0.21
   smoothness: 2
   rotationSmoothness: 2
+  Yaw: 0
+  YawAmount: 60
 --- !u!114 &4796021372463602594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -596,6 +598,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4796021372463602606}
     m_Modifications:
+    - target: {fileID: 1677098498103709817, guid: 7260a47751b8dbc48b1d30ca600871d2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.62541723
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677098498103709817, guid: 7260a47751b8dbc48b1d30ca600871d2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.31496575
+      objectReference: {fileID: 0}
     - target: {fileID: 3943179053173885580, guid: 7260a47751b8dbc48b1d30ca600871d2,
         type: 3}
       propertyPath: m_Name
@@ -655,6 +667,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5705707242392705580, guid: 7260a47751b8dbc48b1d30ca600871d2,
+        type: 3}
+      propertyPath: m_BlendShapeWeights.Array.size
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7260a47751b8dbc48b1d30ca600871d2, type: 3}

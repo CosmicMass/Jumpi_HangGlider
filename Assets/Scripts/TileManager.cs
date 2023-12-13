@@ -10,7 +10,8 @@ public class TileManager : MonoBehaviour
     public int numberOfTiles = 5;
     public List<GameObject> activeTiles = new List<GameObject>();
     public Transform playerTransform;
-    //public GameObject container;
+
+    private Queue<GameObject> tilePool = new Queue<GameObject>();
 
     void Start()
     {
@@ -20,7 +21,6 @@ public class TileManager : MonoBehaviour
                 SpawnTile(0);
             else
                 SpawnTile(Random.Range(0, tilePrefabs.Length));
-
         }
     }
 
@@ -32,16 +32,33 @@ public class TileManager : MonoBehaviour
             DeleteTile();
         }
     }
+
     public void SpawnTile(int tileIndex)
     {
-        GameObject go = Instantiate(tilePrefabs[tileIndex], transform.forward * zSpawn, transform.rotation);
-        activeTiles.Add(go);
-        zSpawn += tileLength;
+        GameObject tile;
 
+        if (tilePool.Count > 0)
+        {
+            tile = tilePool.Dequeue();
+            tile.SetActive(true);
+            tile.transform.position = transform.forward * zSpawn;
+            tile.transform.rotation = transform.rotation;
+        }
+        else
+        {
+            tile = Instantiate(tilePrefabs[tileIndex], transform.forward * zSpawn, transform.rotation);
+        }
+
+        activeTiles.Add(tile);
+        zSpawn += tileLength;
     }
+
     private void DeleteTile()
     {
-        Destroy(activeTiles[0]);
+        GameObject tileToRemove = activeTiles[0];
         activeTiles.RemoveAt(0);
+
+        tileToRemove.SetActive(false);
+        tilePool.Enqueue(tileToRemove);
     }
 }

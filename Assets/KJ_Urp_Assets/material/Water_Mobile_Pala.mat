@@ -13,8 +13,10 @@ Material:
   - _ENVIRONMENTREFLECTIONS_OFF
   - _FOAM
   - _NORMALMAP
+  - _REFRACTION
   - _RIVER
-  - _SHARP_INERSECTION
+  - _SMOOTH_INTERSECTION
+  - _SPECULARHIGHLIGHTS_OFF
   m_InvalidKeywords:
   - ADVANCED_LIGHTING
   - _CROSSPAN_INTERSECTION
@@ -56,33 +58,33 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _CausticsBrightness: 3.85
+    - _CausticsBrightness: 5
     - _CausticsOn: 0
-    - _CausticsSpeed: 0.2
-    - _CausticsTiling: 0.4
+    - _CausticsSpeed: 0.001
+    - _CausticsTiling: 0.01
     - _Cull: 2
-    - _Depth: 0.01
+    - _Depth: 7.03
     - _DepthExp: 0
     - _DisableDepthTexture: 0
-    - _EdgeFade: 3.6
-    - _FoamSize: 0.905
-    - _FoamSpeed: 0.020000014
-    - _FoamTiling: 0.010000015
+    - _EdgeFade: 10
+    - _FoamSize: 0.54
+    - _FoamSpeed: 0.01000001
+    - _FoamTiling: 0.002
     - _FoamWaveMask: 0
     - _FoamWaveMaskExp: 1
     - _HorizonDistance: 32
-    - _IntersectionClipping: 1
-    - _IntersectionFalloff: 0.573
+    - _IntersectionClipping: 0.571
+    - _IntersectionFalloff: 0.473
     - _IntersectionLength: 5
     - _IntersectionRippleDist: 0
     - _IntersectionRippleStrength: 1
     - _IntersectionSource: 0
-    - _IntersectionSpeed: 0
-    - _IntersectionStyle: 1
-    - _IntersectionTiling: 1.0000001
+    - _IntersectionSpeed: 1
+    - _IntersectionStyle: 2
+    - _IntersectionTiling: 1
     - _NormalMapOn: 1
-    - _NormalSpeed: 0.015
-    - _NormalStrength: 0.462
+    - _NormalSpeed: 0.01
+    - _NormalStrength: 0.514
     - _NormalTiling: 0.002
     - _PlanarReflectionsEnabled: 0
     - _PlanarReflectionsParams: 0
@@ -90,12 +92,12 @@ Material:
     - _ReflectionDistortion: 0.05
     - _ReflectionFresnel: 5
     - _ReflectionStrength: 0.349
-    - _RefractionOn: 0
+    - _RefractionOn: 1
     - _RefractionStrength: 1
     - _ShadingMode: 0
-    - _ShadowStrength: 0.744
-    - _SparkleIntensity: 0
-    - _SparkleSize: 0
+    - _ShadowStrength: 1
+    - _SparkleIntensity: 4.48
+    - _SparkleSize: 0.467
     - _SunReflectionDistortion: 0.335
     - _SunReflectionSize: 0.461
     - _SunReflectionStrength: 30
@@ -110,14 +112,14 @@ Material:
     - _WorldSpaceUV: 1
     - _ZWrite: 0
     m_Colors:
-    - _AnimationParams: {r: -1, g: -1, b: 30, a: 0}
-    - _BaseColor: {r: 0, g: 0.3047619, b: 1, a: 1}
+    - _AnimationParams: {r: 1, g: -1, b: 15, a: 0}
+    - _BaseColor: {r: 0, g: 0.39658165, b: 1, a: 1}
     - _DistanceNormalParams: {r: 500, g: 500, b: 0.445, a: 0}
     - _FoamColor: {r: 0.9402515, g: 0.9566862, b: 1, a: 1}
-    - _HorizonColor: {r: 0.27889434, g: 0.89626956, b: 0.90466136, a: 1}
+    - _HorizonColor: {r: 0.27889434, g: 0.89626956, b: 0.90466136, a: 0.7647059}
     - _IntersectionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _ShallowColor: {r: 0.054901935, g: 0.47331733, b: 0.7490196, a: 1}
-    - _SlopeParams: {r: 0, g: 4, b: 0, a: 0}
+    - _ShallowColor: {r: 0, g: 0.60451984, b: 1, a: 0.54509807}
+    - _SlopeParams: {r: 0, g: 2.28, b: 0, a: 0}
     - _TranslucencyParams: {r: 0.278, g: 4.41, b: 0, a: 0}
     - _VertexColorMask: {r: 0, g: 0, b: 1, a: 0}
     - _WaveDirection: {r: 0.5, g: -0.5, b: 0.5, a: -0.5}
@@ -135,4 +137,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 1
+  version: 5

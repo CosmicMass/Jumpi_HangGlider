@@ -10,7 +10,7 @@ public class DeltaController : MonoBehaviour
 
     private float horizontalInput;
     private float verticalInput;
-    public float Yaw;
+    private float Yaw;
 
     public float maxHorizontalRotation = 2f;
     public float maxVerticalRotation = 2f;
