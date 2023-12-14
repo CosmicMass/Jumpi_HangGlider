@@ -89,7 +89,7 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _Amount: 0.000121
-    - _BackwardStrenght: 0
+    - _BackwardStrenght: -0.00005
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
@@ -110,7 +110,7 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _SidewayStrenght: 0.0001
+    - _SidewayStrenght: 0.0002
     - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 0

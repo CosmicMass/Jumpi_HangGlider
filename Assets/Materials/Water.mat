@@ -8,11 +8,11 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Water
-  m_Shader: {fileID: -6465566751694194690, guid: 802793d8b63efb941bd2063cfb6bdaae,
+  m_Shader: {fileID: -6465566751694194690, guid: 1113113c758378b479250bdd551cd10e,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 4
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -61,11 +61,11 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SpecGlossMap:
-        m_Texture: {fileID: 0}
+    - _RefractionNormal:
+        m_Texture: {fileID: 2800000, guid: 88908a7c7a1f0ed418d1048378c17411, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Texture:
+    - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -83,43 +83,59 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Absorption_Coefficient: 0.747
     - _AlphaClip: 0
-    - _BackwardStrenght: 0
+    - _BackwardStrenght: -0.00005
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
+    - _Depth: 9.64
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
+    - _Distance: 20
     - _DstBlend: 0
     - _EnvironmentReflections: 1
+    - _FoamAmount: 20
+    - _FoamCutoff: 2
+    - _FoamScale: 500
+    - _FoamSpeed: 0.7
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _Metallic: 0
+    - _NormalStrength: 0.5
     - _OcclusionStrength: 1
     - _Parallax: 0.005
-    - _QueueControl: 0
+    - _QueueControl: 1
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _SidewayStrenght: 0
-    - _Smoothness: 0.5
+    - _RefractionSpeed: 0.075
+    - _RefractionStrength: 0
+    - _SidewayStrenght: 0.0002
+    - _Smoothness: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Strenght: 0
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
+    - _Absorption_Colour: {r: 1, g: 0, b: 0, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DeepColor: {r: 0, g: 0.5974078, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
+    - _RefractionScale: {r: 10, g: 20, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+    - _SurfaceColor: {r: 0.0141509175, g: 0.91037697, b: 1, a: 0.6431373}
+    - _UV: {r: 0, g: 0, b: 0, a: 0}
+    - _Water_Colour: {r: 0, g: 0.7605362, b: 1, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &3580979354198060073
+--- !u!114 &1293554593759825133
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
